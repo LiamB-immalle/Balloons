@@ -7,9 +7,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <Canvas x:Name="canvas" HorizontalAlignment="Left" Height="233" Margin="205,40,0,0" VerticalAlignment="Top" Width="276"/>
-        <Button x:Name="growButton" Content="Button" HorizontalAlignment="Left" Margin="89,59,0,0" VerticalAlignment="Top" Width="75" Click="growButton_Click" />
-        <Button x:Name="moveButton" Content="Button" HorizontalAlignment="Left" Margin="89,100,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.206,-0.236" Click="moveButton_Click"/>
+        <Canvas x:Name="canvas" Height="319" Margin="234,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="283"/>
+        <Button x:Name="growButton" Content="Grow" HorizontalAlignment="Left" Margin="84,174,0,0" VerticalAlignment="Top" Width="75" Click="growButton_Click" />
+        <Button x:Name="upButton" Content="Up" HorizontalAlignment="Left" Margin="84,108,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.206,-0.236" Click="upButton_Click"/>
+        <Button x:Name="downButton" Content="Down" HorizontalAlignment="Left" Margin="84,128,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.206,-0.236" Click="downButton_Click"/>
+        <Button x:Name="leftButton" Content="Left" HorizontalAlignment="Left" Margin="9,128,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.206,-0.236" Click="leftButton_Click"/>
+        <Button x:Name="rightButton" Content="Right" HorizontalAlignment="Left" Margin="159,128,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.206,-0.236" Click="rightButton_Click"/>
+        <Button x:Name="shrinkButton" Content="Shrink" HorizontalAlignment="Left" Margin="84,194,0,0" VerticalAlignment="Top" Width="75" Click="shrinkButton_Click" />
 
     </Grid>
 </Window>

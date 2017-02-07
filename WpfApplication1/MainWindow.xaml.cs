@@ -28,7 +28,7 @@ namespace WpfApplication1
 
             for(var i = 0; i<100; i++)
             {
-                Balloon newBalloon = new Balloon(canvas, 20, 100);
+                Balloon newBalloon = new Balloon(canvas, 20, 100, Colors.Aqua);
                 balloons.Add(newBalloon);
             }
         }
@@ -41,12 +41,44 @@ namespace WpfApplication1
             }
         }
 
-        private void moveButton_Click(object sender, RoutedEventArgs e)
+        private void shrinkButton_Click(object sender, RoutedEventArgs e)
         {
             foreach (var b in balloons)
             {
-                b.Move();
+                b.Shrink();
             }
         }
+
+        private void upButton_Click(object sender, RoutedEventArgs e)
+        {
+            foreach (var b in balloons)
+            {
+                b.Up();
+            }
+        }
+
+        private void downButton_Click(object sender, RoutedEventArgs e)
+        {
+            foreach (var b in balloons)
+            {
+                b.Down();
+            }
+        }
+
+        private void leftButton_Click(object sender, RoutedEventArgs e)
+        {
+            foreach (var b in balloons)
+            {
+                b.Left();
+            }
+        }
+                
+        private void rightButton_Click(object sender, RoutedEventArgs e)
+        {
+            foreach (var b in balloons)
+            {
+                b.Right();
+            }
+        }                
     }
 }
