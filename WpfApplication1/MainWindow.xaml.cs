@@ -26,11 +26,11 @@ namespace WpfApplication1
         {
             InitializeComponent();
 
-            for(var i = 0; i<100; i++)
+            for(var i = 0; i<10; i++)
             {
                 Balloon newBalloon = new Balloon(canvas, 20, 100, Colors.Aqua);
                 balloons.Add(newBalloon);
-            }
+            }    
         }
 
         private void growButton_Click(object sender, RoutedEventArgs e)
